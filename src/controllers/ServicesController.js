@@ -30,6 +30,7 @@ module.exports = {
         var setResponseStatus = services.docs.map(function(x) {
 
             x.responseStatus = 400;
+            
         });
 
         return res.json(services);
@@ -60,7 +61,7 @@ module.exports = {
         var setResponseStatus = services.docs.map(function(x) {
             x.responseStatus = 400;
         });   
-             
+
         return res.json(services);
 
     }
